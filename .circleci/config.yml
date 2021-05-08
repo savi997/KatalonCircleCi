@@ -11,4 +11,4 @@ workflows:
     jobs:
       - katalon-studio/run:
           version: latest
-          command_arguments:  -retry=0 -testSuitePath="Test Suites/Verify Operations" -executionProfile="default" -browserType="Chrome" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true
+          command_arguments:  katalonc -noSplash -runMode=console -projectPath="demo.prj" -retry=1 -retryStrategy=allExecutions -testSuitePath="Test Suites/Verify Operations" -executionProfile="default" -browserType="Chrome (headless)" -apiKey="2d27c4cf-f3d9-447b-8df0-17888a29e2f9" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true
