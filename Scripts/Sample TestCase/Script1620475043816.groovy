@@ -23,3 +23,7 @@ WebUI.navigateToUrl('test.salesforce.com')
 
 WebUI.maximizeWindow()
 
+WebUI.setText(findTestObject('Username'), 'savita.patil@catch.com.au')
+
+WebUI.delay(30)
+
