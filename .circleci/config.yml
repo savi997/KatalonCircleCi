@@ -10,5 +10,5 @@ workflows:
   build:
     jobs:
       - katalon-studio/run: 
-          version: latest
+          version: Regression
           command_arguments:    -retry=1 -retryStrategy=allExecutions -testSuitePath="Test Suites/Verify Operations" -executionProfile="default" -browserType="Chrome (headless)" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true
